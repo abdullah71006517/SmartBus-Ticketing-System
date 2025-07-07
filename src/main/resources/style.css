@@ -1,0 +1,15 @@
+.bkash-bar {
+    -fx-bar-fill: #e6006e;
+}
+
+.rocket-bar {
+    -fx-bar-fill: #7f00ff;
+}
+
+.nagad-bar {
+    -fx-bar-fill: #ff6f00;
+}
+
+.default-bar {
+    -fx-bar-fill: #4CAF50; /* Default green */
+}

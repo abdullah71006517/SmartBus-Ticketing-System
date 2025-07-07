@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0"
+            xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/23.0.1"
+            fx:controller="com.example.demo1.Controller.FeedbackController">
+
+    <!-- Title -->
+    <Label layoutX="300.0" layoutY="30.0" text="📝 Submit Your Feedback"
+           style="-fx-font-size: 22px; -fx-text-fill: #0f25e4;" />
+
+    <!-- Question 1 -->
+    <Label layoutX="50.0" layoutY="80.0" text="1. How was the cleanliness?">
+        <font><Font name="System Bold Italic" size="13.0" /></font>
+    </Label>
+    <RadioButton fx:id="cleanBad" layoutX="60.0" layoutY="110.0" text="Bad" textFill="#e7102d" />
+    <RadioButton fx:id="cleanAverage" layoutX="160.0" layoutY="110.0" text="Average" textFill="#2519c4" />
+    <RadioButton fx:id="cleanGood" layoutX="270.0" layoutY="110.0" text="Good" textFill="#0dc72f" />
+
+    <!-- Question 2 -->
+    <Label layoutX="50.0" layoutY="150.0" text="2. How was the driver’s behavior?">
+        <font><Font name="System Bold Italic" size="13.0" /></font>
+    </Label>
+    <RadioButton fx:id="behaviorBad" layoutX="60.0" layoutY="180.0" text="Bad" textFill="#e7102d" />
+    <RadioButton fx:id="behaviorAverage" layoutX="160.0" layoutY="180.0" text="Average" textFill="#2519c4" />
+    <RadioButton fx:id="behaviorGood" layoutX="270.0" layoutY="180.0" text="Good" textFill="#0dc72f" />
+
+    <!-- Question 3 -->
+    <Label layoutX="50.0" layoutY="220.0" text="3. How was the overall service?">
+        <font><Font name="System Bold Italic" size="13.0" /></font>
+    </Label>
+    <RadioButton fx:id="ratingBad" layoutX="60.0" layoutY="250.0" text="Bad" textFill="#e7102d" />
+    <RadioButton fx:id="ratingAverage" layoutX="160.0" layoutY="250.0" text="Average" textFill="#2519c4" />
+    <RadioButton fx:id="ratingGood" layoutX="270.0" layoutY="250.0" text="Good" textFill="#0dc72f" />
+
+    <!-- Text Area -->
+    <Label layoutX="50.0" layoutY="300.0" text="Your Message:" />
+    <TextArea fx:id="feedbackTextArea" layoutX="50.0" layoutY="330.0"
+              prefHeight="150.0" prefWidth="600.0"
+              promptText="Write your feedback here..." wrapText="true" />
+
+    <!-- Buttons -->
+    <Button fx:id="submitButton" layoutX="160.0" layoutY="500.0"
+            text="Submit" style="-fx-background-color: #28a745; -fx-text-fill: white;"
+            onAction="#submitFeedback" />
+
+    <Button layoutX="270.0" layoutY="500.0"
+            text="Cancel" style="-fx-background-color: #dc3545; -fx-text-fill: white;"
+            onAction="#cancelFeedback" />
+
+    <!-- Optional Image -->
+    <ImageView layoutX="680.0" layoutY="80.0" fitWidth="200" fitHeight="200" preserveRatio="true">
+        <image>
+            <Image url="@image/submitfeedback1.png" />
+        </image>
+    </ImageView>
+
+</AnchorPane>

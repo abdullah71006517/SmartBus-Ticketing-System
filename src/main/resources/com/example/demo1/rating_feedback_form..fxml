@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo1.Controller.FeedbackRatingController"
+      spacing="20" alignment="TOP_CENTER" prefWidth="600" prefHeight="600"
+      style="-fx-background-color: #f0f4f7;" padding="20">
+
+    <Label text="📝 Rate Your Experience"
+           style="-fx-font-size: 20px; -fx-text-fill: #333;" />
+
+    <!-- Question 1 -->
+    <VBox spacing="5">
+        <Label text="1. How was the cleanliness?" />
+        <HBox spacing="10">
+            <RadioButton text="⭐" fx:id="q1opt1" userData="1"/>
+            <RadioButton text="⭐⭐" fx:id="q1opt2" userData="2"/>
+            <RadioButton text="⭐⭐⭐" fx:id="q1opt3" userData="3"/>
+            <RadioButton text="⭐⭐⭐⭐" fx:id="q1opt4" userData="4"/>
+            <RadioButton text="⭐⭐⭐⭐⭐" fx:id="q1opt5" userData="5"/>
+        </HBox>
+    </VBox>
+
+    <!-- Question 2 -->
+    <VBox spacing="5">
+        <Label text="2. How was the driver’s behavior?" />
+        <HBox spacing="10">
+            <RadioButton text="⭐" fx:id="q2opt1" userData="1"/>
+            <RadioButton text="⭐⭐" fx:id="q2opt2" userData="2"/>
+            <RadioButton text="⭐⭐⭐" fx:id="q2opt3" userData="3"/>
+            <RadioButton text="⭐⭐⭐⭐" fx:id="q2opt4" userData="4"/>
+            <RadioButton text="⭐⭐⭐⭐⭐" fx:id="q2opt5" userData="5"/>
+        </HBox>
+    </VBox>
+
+    <!-- Question 3 -->
+    <VBox spacing="5">
+        <Label text="3. How was the seat comfort?" />
+        <HBox spacing="10">
+            <RadioButton text="⭐" fx:id="q3opt1" userData="1"/>
+            <RadioButton text="⭐⭐" fx:id="q3opt2" userData="2"/>
+            <RadioButton text="⭐⭐⭐" fx:id="q3opt3" userData="3"/>
+            <RadioButton text="⭐⭐⭐⭐" fx:id="q3opt4" userData="4"/>
+            <RadioButton text="⭐⭐⭐⭐⭐" fx:id="q3opt5" userData="5"/>
+        </HBox>
+    </VBox>
+
+    <!-- Question 4 -->
+    <VBox spacing="5">
+        <Label text="4. Was the bus on time?" />
+        <HBox spacing="10">
+            <RadioButton text="⭐" fx:id="q4opt1" userData="1"/>
+            <RadioButton text="⭐⭐" fx:id="q4opt2" userData="2"/>
+            <RadioButton text="⭐⭐⭐" fx:id="q4opt3" userData="3"/>
+            <RadioButton text="⭐⭐⭐⭐" fx:id="q4opt4" userData="4"/>
+            <RadioButton text="⭐⭐⭐⭐⭐" fx:id="q4opt5" userData="5"/>
+        </HBox>
+    </VBox>
+
+    <!-- Question 5 -->
+    <VBox spacing="5">
+        <Label text="5. How was the overall service?" />
+        <HBox spacing="10">
+            <RadioButton text="⭐" fx:id="q5opt1" userData="1"/>
+            <RadioButton text="⭐⭐" fx:id="q5opt2" userData="2"/>
+            <RadioButton text="⭐⭐⭐" fx:id="q5opt3" userData="3"/>
+            <RadioButton text="⭐⭐⭐⭐" fx:id="q5opt4" userData="4"/>
+            <RadioButton text="⭐⭐⭐⭐⭐" fx:id="q5opt5" userData="5"/>
+        </HBox>
+    </VBox>
+
+    <Button text="Submit Feedback" onAction="#submitFeedback"
+            style="-fx-background-color: #007bff; -fx-text-fill: white; -fx-padding: 10 20; -fx-font-size: 14px;"/>
+</VBox>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.TicektCansel">
+   <children>
+      <TextField fx:id="ticketid" layoutX="58.0" layoutY="152.0" prefHeight="26.0" prefWidth="293.0" promptText="Enter your Ticket ID " />
+      <Label layoutX="58.0" layoutY="127.0" prefHeight="18.0" prefWidth="80.0" text="Ticket ID" textFill="#0121d7">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextArea layoutX="58.0" layoutY="238.0" prefHeight="200.0" prefWidth="343.0" />
+      <Label layoutX="68.0" layoutY="219.0" prefHeight="18.0" prefWidth="170.0" text="Write your reason here... " textFill="#4702f7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="98.0" layoutY="490.0" mnemonicParsing="false" onAction="#sumitapplication" prefHeight="26.0" prefWidth="135.0" style="-fx-background-color: green;" text="Submit Application " />
+      <Slider layoutX="446.0" layoutY="28.0" orientation="VERTICAL" prefHeight="502.0" prefWidth="0.0" />
+      <TextArea layoutX="476.0" layoutY="108.0" prefHeight="394.0" prefWidth="442.0" text="• Cancellation requests must be submitted before the bus departure&#10; time.&#10;&#10;• Ticket ID and a valid reason are required for cancellation.&#10;&#10;• Admin will review and approve each cancellation request.&#10;&#10;• Tickets cannot be cancelled after the bus has departed.&#10;&#10;• Used or invalid tickets are not eligible for cancellation.&#10;&#10;• Only the original purchaser can request ticket cancellation.&#10;&#10;• Refunds: 100% (6+ hrs), 50% (2–6 hrs), No refund (&lt;2 hrs before&#10; departure).&#10;&#10;• Refunds will be processed within 3–7 business days.&#10; ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="477.0" layoutY="40.0" prefHeight="54.0" prefWidth="414.0" text=" 🎫 Ticket Cancellation Rules" textFill="#d43535">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="59.0" fitWidth="142.0" layoutX="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/call%20us.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="34.0" layoutY="46.0" prefHeight="18.0" prefWidth="150.0" text="+880154764645" textFill="#1dcc32">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="827.0" layoutY="16.0" mnemonicParsing="false" onAction="#back" text="back" />
+   </children>
+</AnchorPane>

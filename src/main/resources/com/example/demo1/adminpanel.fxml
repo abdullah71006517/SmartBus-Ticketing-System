@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="586.0" prefWidth="891.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.Adminpenel">
+   <children>
+      <Pane layoutX="-9.0" layoutY="-7.0" prefHeight="595.0" prefWidth="268.0" style="-fx-background-color: #ff8c00;">
+         <children>
+            <ImageView fitHeight="191.0" fitWidth="187.0" layoutX="23.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/adminicon1.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="12.0" layoutY="211.0" prefHeight="37.0" prefWidth="227.0" text="Admin Panel" textFill="#fefff8">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="-1.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#addbus" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: white;" text="Add Bus">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="3.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/add%20icon.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="-3.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#updatebus" prefHeight="45.0" prefWidth="257.0" style="-fx-background-color: white;" text="Update Bus">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="45.0" fitWidth="48.0" layoutX="1.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/update%20icon.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="-8.0" layoutY="473.0" mnemonicParsing="false" onMouseClicked="#addoprator" prefHeight="45.0" prefWidth="257.0" style="-fx-background-color: white;" text="Add Operator">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="45.0" fitWidth="53.0" layoutX="2.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/admin%20icon.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="-4.0" layoutY="410.0" mnemonicParsing="false" onMouseClicked="#deletebus" prefHeight="40.0" prefWidth="257.0" style="-fx-background-color: white;" text="Delete Bus">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="59.0" layoutX="6.0" layoutY="413.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/delete.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="totalincome" fitHeight="164.0" fitWidth="170.0" layoutX="286.0" layoutY="22.0" onMouseClicked="#totalincome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/totalincomeicon.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="285.0" layoutY="175.0" prefHeight="28.0" prefWidth="146.0" text="Total income">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="140.0" fitWidth="146.0" layoutX="518.0" layoutY="25.0" onMouseClicked="#userinformation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/adminicon1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="529.0" layoutY="175.0" prefHeight="28.0" prefWidth="182.0" text="userinfomation">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="741.0" layoutY="28.0" onMouseClicked="#viewfeedback" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/feedbackicon.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="759.0" layoutY="175.0" prefHeight="28.0" prefWidth="146.0" text="View feedback">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="piechart" layoutX="331.0" layoutY="250.0" prefHeight="291.0" prefWidth="450.0" style="-fx-background-color: white;" title="Popular Cities Based on Passenger Volume" />
+      <ImageView fitHeight="67.0" fitWidth="90.0" layoutX="799.0" layoutY="496.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/logout%20icon.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

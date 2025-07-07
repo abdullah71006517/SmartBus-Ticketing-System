@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.UserListController">
+
+    <Label layoutX="34.0" layoutY="24.0" prefHeight="54.0" prefWidth="282.0" style="-fx-font-size: 22px; -fx-text-fill: #2c3e50; -fx-font-weight: bold;" text="👥 User Information">
+      <font>
+         <Font name="System Bold Italic" size="14.0" />
+      </font></Label>
+
+    <TableView fx:id="userTable" layoutX="34.0" layoutY="87.0" prefHeight="467.0" prefWidth="799.0" style="-fx-background-color: #f0f8ff; -fx-border-color: #3498db; -fx-border-width: 2;">
+
+        <columns>
+            <TableColumn fx:id="usernameCol" prefWidth="120" text="Username" />
+            <TableColumn fx:id="fullNameCol" prefWidth="150" text="Full Name" />
+            <TableColumn fx:id="phoneCol" prefWidth="120" text="Phone" />
+            <TableColumn fx:id="emailCol" prefWidth="200" text="Email" />
+            <TableColumn fx:id="userTypeCol" prefWidth="100" text="User Type" />
+        </columns>
+
+    </TableView>
+   <Button layoutX="769.0" layoutY="24.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0" prefWidth="92.0" text="back" />
+
+</AnchorPane>

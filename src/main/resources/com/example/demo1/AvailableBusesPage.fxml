@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="586.0" prefWidth="891.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controller.AvailableBusesPage">
+   <children>
+      <Button layoutX="789.0" layoutY="33.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="66.0" text="back " />
+      <TableView fx:id="bustable" layoutX="55.0" layoutY="119.0" prefHeight="400.0" prefWidth="781.0">
+        <columns>
+          <TableColumn fx:id="busid" prefWidth="121.59998321533203" text="Bus ID" />
+          <TableColumn fx:id="timeid" prefWidth="88.79998779296875" text="Time" />
+            <TableColumn fx:id="Fromid" prefWidth="119.20001220703125" text="From" />
+            <TableColumn fx:id="toid" prefWidth="143.99996948242188" text="To" />
+            <TableColumn fx:id="pirceid" prefWidth="140.0" text="price" />
+            <TableColumn fx:id="actionid" prefWidth="168.79998779296875" text="action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
